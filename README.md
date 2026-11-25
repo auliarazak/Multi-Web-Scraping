@@ -31,12 +31,6 @@ Jadwal Tokopedia membuka jendela Chromium secara bawaan, seperti scrape manual. 
 
 `app.py` adalah antarmuka Tkinter lama. Kedua antarmuka menggunakan database yang sama, jadi hindari menjalankannya bersamaan.
 
-## Data lokal dan cache
-
-Database lama `scrape.db` tetap dipakai. Saat pertama kali dijalankan dengan versi ini, skema diperbarui otomatis tanpa menghapus item: satu item dapat dikaitkan dengan beberapa keyword atau lokasi. Database lama hanya menyimpan satu keyword per item; hubungan lain yang tidak pernah dicatat sebelumnya baru terbentuk saat scraping ulang. Sebaiknya cadangkan database sebelum pembaruan besar.
-
-File debug baru disimpan di `runtime/`; profil Shopee baru juga dibuat di sana. Jika profil lama `pw_shopee_profile/` ada, aplikasi tetap memakainya agar sesi tidak berubah. File lama tidak dipindahkan atau dihapus otomatis. Jangan membagikan profil browser, cookie (termasuk `google_storage.json`), database, log, atau HTML debug. `.gitignore` membantu mencegah file tersebut ditambahkan ke Git, tetapi tidak menghapus file yang sudah pernah dilacak atau dibagikan.
-
 ## Pengujian
 
 ```powershell
