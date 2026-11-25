@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.db
+*.db-*
+*_profile/
+maps_profile/
+google_storage.json
+debug_*.html
+*.log
+runtime/
+.pytest_cache/
+/scraper/research_pub_urls.json
+/scraper/research_pub_urls.json.tmp
